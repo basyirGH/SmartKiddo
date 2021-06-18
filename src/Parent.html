@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title> Parent/Teacher </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="Parent.css">
+</head>
+
+<body>
+	<div id="header">	
+		<h1> SMART <br/> KIDDO </br> .COM </br> </h1>
+		<h2> Education For Kids </h2>
+		<div class='drop'>
+			<ul class='drop_menu'>
+				<li> <a href="Home.html"> Home </a>
+				<ul>
+				<li> <a href="Alphabets.html"> Alphabets  </a> </li>
+				<li> <a href="Numbers.html"> Numbers </a> </li>
+				<li> <a href="Rhymes.html"> Nursery Rhymes </a> </li>
+				<li> <a href="Game.html"> Games </a> </li>
+				</ul>
+				</li>
+				<li> <a href="Parent.html"> Parent/Teacher Center </a>
+				</li>
+				<li> <a href="Contacts.html"> Contacts </a> </li>
+				<li> <a href="#"> About Us </a> 
+				<ul>
+				<li> <a href="History.html"> History </a> </li>
+				<li> <a href="Mission.html"> Mission </a> </li>
+				</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<br/>
+	<div id="body">
+		<h2> Parent/Teacher Center </h2>
+		<div id="parentTips">
+			<h2> Did you know? </h2>
+			<blockquote align=center>
+
+				“Now I know my ABCs, next time won’t you sing with me?”
+				Do you remember singing the ABCs growing up? For many kids, 
+				this song is their first introduction to the alphabet. 
+				It may also be their first time saying something from memory.
+				The English alphabet is a group of 26 letters that represent sounds in the language. 
+				Knowing these letters (and their sounds) is a basic skill kids need to learn how to read.
+				Kids typically learn the alphabet at a young age. 
+				But some may need extra time and practice to master all the letters. 
+				
+				<br/><br/>
+				Here’s how and when kids typically learn their ABCs:
+				<br/><br/>
+				By age 2: Kids start recognizing some letters and can sing or say aloud the “ABC” song.
+				<br/>By age 3: Kids may recognize about half the letters in the alphabet and start to connect letters to their sounds. (Like s makes the /s/ sound.)
+				<br/>By age 4: Kids often know all the letters of the alphabet and their correct order.
+				<br/>By kindergarten: Most kids can match each letter to the sound it makes.
+				
+			</blockquote>
+			<h2> Join our Free Newsletter! - Free tips, resources and updates monthly! </h2>
+			<form method="get">
+				E-mail : <input id="email" type="text" placeholder="yourname@mail.com"> <br/> <br/>
+				Name   : <input id="name" type="text" placeholder="your name"> <br/> <br/>
+				<button onclick="checkFields()"> Submit </button> <br/> <br/>
+			</form>
+		</div>
+	</div>
+	<br/>
+	<div id="footer">
+		<p> 
+		<i> "Knowledge For All" </i> 
+		<br/> Copyright &copy BASYIR & ISKANDAR
+		<br/>
+		<br/> FTKKI <br/> University of Malaysia Terengganu 
+		<a href="Contacts.html"> Contact Us </a>
+	</p>
+	</div>
+	
+	<script type="text/javascript">
+		function checkFields() {
+			var email = document.getElementById("email").value;
+			var name = document.getElementById("name").value;
+			
+			if (email == "" || name == "") {
+				alert("Make sure all fields are filled.");
+			}
+			
+			else alert("Submitted successfully.");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+/***
+Milestone3.css
+Author: Mohd Basyir bin Zainuddin S55688
+	Iskandar Zulkarnain bin Muhd Zubir S55596
+***/
+
+body 
+{
+	background-image: url("images/mainBG4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#header 
+{
+	margin: auto;
+	width: 60%;
+	padding: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	box-shadow: 5px 10px black;
+	background-color:  #4c00c8;
+	color: white;
+	font-family: Eras ITC;
+}
+
+#body a, #body a:visited
+{
+	text-decoration: none;
+	decoration: none;
+}
+
+.drop_menu {
+	background-color:#ff7800;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	height:30px;
+	width:97%;
+	border-radius: 10px;
+}
+
+.drop_menu li { float: left; }
+.drop li a {
+	padding:7px 8px;
+	display:block;
+	color:white;
+	text-decoration:none;
+	font:15px Eras ITC, sans-serif;
+	font-weight: bold;
+}
+
+/*Submenu */
+
+.drop_menu ul {
+	position:absolute;
+	left:-99px;
+	top:-99px;
+	list-style-type:none;
+}
+
+.drop_menu li:hover {
+	position:relative;
+	background: #045895;
+}
+
+.drop_menu li:hover ul {
+	left:0px;
+	top:30px;
+	padding:0px;
+}
+
+.drop_menu li:hover ul li a {
+	padding:5px;
+	display:block;
+	width:140px;
+	text-indent:15px;
+	background-color: #023a63;
+}
+
+.drop_menu li:hover ul li a:hover {
+	background: red;
+}
+
+.drop_menu p {
+	text-decoration:none;
+	font:12px arial, verdana, sans-serif;
+}
+
+#body 
+{
+	margin: auto;
+	width: 60%;
+	padding: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	box-shadow: 5px 10px black;
+	background-color:  #4c00c8;
+	color: white;
+	font-family: Eras ITC;
+}
+
+.rhymes
+{		
+	margin: auto;
+	width: 500px;
+	height: 300px;
+	border: 3px solid black;
+	border-radius: 15px;
+	box-shadow: 3px 5px black;
+	background-color: black;
+	color: white;
+	font-family: Eras ITC;
+}
+
+#body p
+{
+	text-align: center;
+
+}
+
+
+#footer 
+{
+	margin: auto;
+	width: 60%;
+	padding: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	box-shadow: 5px 10px black;
+	background-color: #4c00c8;
+	color: white;
+	font-family: Eras ITC;
+	text-align: left;
+}
+
+

@@ -1,0 +1,210 @@
+/***
+Milestone3.css
+Author: Mohd Basyir bin Zainuddin S55688
+	Iskandar Zulkarnain bin Muhd Zubir S55596
+***/
+
+body 
+{
+	background-image: url("images/mainBG4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#header 
+{
+	margin: auto;
+	width: 60%;
+	padding: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	box-shadow: 5px 10px black;
+	background-color:  #4c00c8;
+	color: white;
+	font-family: Eras ITC;
+}
+
+#body a, #body a:visited
+{
+	text-decoration: none;
+	decoration: none;
+}
+
+.drop_menu {
+	background-color:#ff7800;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	height:30px;
+	width:97%;
+	border-radius: 10px;
+}
+
+.drop_menu li { float: left; }
+.drop li a {
+	padding:7px 8px;
+	display:block;
+	color:white;
+	text-decoration:none;
+	font:15px Eras ITC, sans-serif;
+	font-weight: bold;
+}
+
+/*Submenu */
+
+.drop_menu ul {
+	position:absolute;
+	left:-99px;
+	top:-99px;
+	list-style-type:none;
+}
+
+.drop_menu li:hover {
+	position:relative;
+	background: #045895;
+}
+
+.drop_menu li:hover ul {
+	left:0px;
+	top:30px;
+	padding:0px;
+}
+
+.drop_menu li:hover ul li a {
+	padding:5px;
+	display:block;
+	width:140px;
+	text-indent:15px;
+	background-color: #023a63;
+}
+
+.drop_menu li:hover ul li a:hover {
+	background: red;
+}
+
+.drop_menu p {
+	text-decoration:none;
+	font:12px arial, verdana, sans-serif;
+}
+
+#body 
+{
+	margin: auto;
+	width: 60%;
+	padding: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	box-shadow: 5px 10px black;
+	background-color:  #4c00c8;
+	color: white;
+	font-family: Eras ITC;
+
+}
+
+#body table 
+{
+	table-layout: fixed;
+	width: 95%;
+}
+
+#body td
+{	
+	padding: 15px;
+	overflow: hidden;
+}
+
+#o1
+{	
+	background-image: url("images/abc2.gif");
+	background-size: cover;
+	color: white;
+}
+
+#o1:hover
+{
+	box-shadow: 5px 10px #fffb00;
+}
+
+#o2
+{		
+	background-image: url("images/123.jpg");
+	background-size: cover;
+	color: white;
+}
+
+#o2:hover
+{
+	box-shadow: 5px 10px #fffb00;
+}
+
+
+
+#o3
+{	
+	background-image: url("images/days.jpg");
+	background-size: cover;
+	color: black;
+}
+
+#o3:hover
+{
+	box-shadow: 5px 10px #fffb00;
+}
+
+
+#o4
+{	
+	background-image: url("images/rhymes.gif");
+	background-size: cover;
+	color: black;
+}
+
+#o4:hover
+{
+	box-shadow: 5px 10px #fffb00;
+}
+
+
+#o5
+{
+	background-image: url("images/game.gif");
+	background-size: cover;
+	color: black;
+	
+}
+
+#o5:hover
+{
+	box-shadow: 5px 10px #fffb00;
+}
+
+
+#body div
+{
+	display: block;
+	width: 95%;
+	height: 200px;
+	margin: auto;
+	border: 3px solid black;
+	border-radius: 30px;
+	box-shadow: 5px 10px black;
+	font-family: Eras ITC;
+	font-weight: bold;
+	text-align: center;
+}
+
+#footer 
+{
+	margin: auto;
+	width: 60%;
+	padding: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	box-shadow: 5px 10px black;
+	background-color: #4c00c8;
+	color: white;
+	font-family: Eras ITC;
+	text-align: left;
+}
+
+

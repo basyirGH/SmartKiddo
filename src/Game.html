@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title> Game </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="Game.css">
+</head>
+
+<body>
+	<div id="header">	
+		<h1> SMART <br/> KIDDO </br> .COM </br> </h1>
+		<h2> Education For Kids </h2>
+		<div class='drop'>
+			<ul class='drop_menu'>
+				<li> <a href="Home.html"> Home </a>
+				<ul>
+				<li> <a href="Alphabets.html"> Alphabets  </a> </li>
+				<li> <a href="Numbers.html"> Numbers </a> </li>
+				<li> <a href="Rhymes.html"> Nursery Rhymes </a> </li>
+				<li> <a href="Game.html"> Games </a> </li>
+				</ul>
+				</li>
+				<li> <a href="Parent.html"> Parent/Teacher Center </a>
+				</li>
+				<li> <a href="Contacts.html"> Contacts </a> </li>
+				<li> <a href="#"> About Us </a> 
+				<ul>
+				<li> <a href="History.html"> History </a> </li>
+				<li> <a href="Mission.html"> Mission </a> </li>
+				</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<br/>
+	<div id="body">
+		<h2> What is the missing letter? </h2>
+		<h3> Click the button </h3>
+		<div id="imgWindow">
+		</div><br/>
+		<div id="newButton" onclick="generateNew()"> 
+			<h3> Generate </h3>
+		</div><br/>	
+	</div>
+	<br/>
+	<div id="footer">
+		<p> 
+		<i> "Knowledge For All" </i> 
+		<br/> Copyright &copy BASYIR & ISKANDAR
+		<br/>
+		<br/> FTKKI <br/> University of Malaysia Terengganu 
+		<a href="Contacts.html"> Contact Us </a>
+	</p>
+	</div>
+	<script>
+		function generateNew() 
+		{
+			 var theImages = [{
+				src: "images/spellGame/Slide1.JPG",
+				width: "500",
+				height: "250"
+			}, {
+				src: "images/spellGame/Slide2.JPG",
+				width: "500",
+				height: "250"
+			}, {
+				src: "images/spellGame/Slide3.JPG",
+				width: "500",
+				height: "250"
+			}, {
+				src: "images/spellGame/Slide4.JPG",
+				width: "500",
+				height: "250"
+			}, {
+				src: "images/spellGame/Slide5.JPG",
+				width: "500",
+				height: "250"
+			}, {
+				src: "images/spellGame/Slide6.JPG",
+				width: "500",
+				height: "250"
+			}, {
+				src: "images/spellGame/Slide7.JPG",
+				width: "500",
+				height: "250"
+			}, {
+				src: "images/spellGame/Slide8.JPG",
+				width: "500",
+				height: "250"
+			}, {
+				src: "images/spellGame/Slide9.JPG",
+				width: "500",
+				height: "250"
+			}, {
+				src: "images/spellGame/Slide10.JPG",
+				width: "500",
+				height: "250"
+			}];
+			
+			var preBuffer = [];
+			for (var i = 0, j = theImages.length; i < j; i++) {
+				preBuffer[i] = new Image();
+				preBuffer[i].src = theImages[i].src;
+				preBuffer[i].width = theImages[i].width;
+				preBuffer[i].height = theImages[i].height;
+			}
+		   
+		
+			function getRandomInt(min,max) 
+			{
+				imn = Math.floor(Math.random() * (max - min + 1)) + min;
+				return preBuffer[imn];
+			}  
+			  
+			var newImage = getRandomInt(0, preBuffer.length - 1);
+			 
+			var images = document.getElementsByTagName('img');
+			var l = images.length;
+			for (var p = 0; p < l; p++) {
+				images[0].parentNode.removeChild(images[0]);
+			}
+			var imgBox = document.getElementById("imgWindow");
+			imgBox.appendChild(newImage);
+		}
+	</script>
+	
+	
+</body>
+</html>
